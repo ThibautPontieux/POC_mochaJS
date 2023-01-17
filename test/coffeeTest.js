@@ -1,8 +1,8 @@
 var assert = require('assert');
 var Coffee = require('../lib/Coffee');
-
+// Bloc de tests de la classe Coffee
 describe('Coffee', function () {
-
+  // Test la méthode getType
   describe('#type', function () {
     it('doit retourner la référence du type de café passé en paramètre', function () {
       assert.equal(Coffee.getType('Café en grains'), 1, 'Type inconnu');
@@ -13,8 +13,9 @@ describe('Coffee', function () {
     });
   });
 
-  // Passer les tests sur un jeu de données
+  //Test la methode getGrinding
   describe('#grinding', function() {
+    // Ici on passe les tests à partir d'un jeu de données
     const machineNames = [
       {args: 'French Press', expected: 'Coarse'},
       {args: 'Cold Brew', expected: 'Coarse'},
