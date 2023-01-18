@@ -17,19 +17,19 @@ describe('Coffee', function () {
   describe('#grinding', function() {
     // Ici on passe les tests à partir d'un jeu de données
     const machineNames = [
-      {args: 'French Press', expected: 'Coarse'},
-      {args: 'Cold Brew', expected: 'Coarse'},
-      {args: 'Pour over', expected: 'Medium coarse'},
-      {args: 'Machine drip', expected: 'Medium'},
-      {args: 'Siphon', expected: 'Medium'},
-      {args: 'Moka pot', expected: 'Fine'},
-      {args: 'Turkish coffee pot', expected: 'Extra fine'}
+      {args: 'Cafetière à piston', expected: 'Coarse'},
+      {args: 'Cafetière infusion à froid', expected: 'Coarse'},
+      {args: 'Cafetière à filtre', expected: 'Medium coarse'},
+      {args: 'Cafetière électrique', expected: 'Medium'},
+      {args: 'Cafetière à dépression', expected: 'Medium'},
+      {args: 'Cafetière italienne', expected: 'Fine'},
+      {args: 'Cafetière turque', expected: 'Extra fine'}
     ];
 
     machineNames.forEach(({args, expected}) => {
-      it('doit retourner la mouture associée à l\'appareil passé en paramètre', function () {
+      it('doit retourner l\'appareil ' + args + ' associée à la mouture ' + expected, function () {
         assert.strictEqual(Coffee.getGrinding(args), expected);
-      });  
+      });
     });
   })
 })

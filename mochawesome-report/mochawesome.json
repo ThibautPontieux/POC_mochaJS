@@ -1,0 +1,272 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 8,
+    "passes": 8,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-01-18T20:38:07.762Z",
+    "end": "2023-01-18T20:38:07.772Z",
+    "duration": 10,
+    "testsRegistered": 8,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b5718d62-3076-4146-8277-03cce52f1c3c",
+      "title": "",
+      "fullFile": "C:\\Users\\thibaut.pontieux\\Documents\\ENI\\POC_mochaJS\\test\\coffeeTest.js",
+      "file": "\\test\\coffeeTest.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "61edb98f-49a9-4f4a-91fc-3bfaf3a6ec6f",
+          "title": "Coffee",
+          "fullFile": "C:\\Users\\thibaut.pontieux\\Documents\\ENI\\POC_mochaJS\\test\\coffeeTest.js",
+          "file": "\\test\\coffeeTest.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "874ce258-1a0b-4afc-8a0d-bbc5edea1918",
+              "title": "#type",
+              "fullFile": "C:\\Users\\thibaut.pontieux\\Documents\\ENI\\POC_mochaJS\\test\\coffeeTest.js",
+              "file": "\\test\\coffeeTest.js",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "doit retourner la référence du type de café passé en paramètre",
+                  "fullTitle": "Coffee #type doit retourner la référence du type de café passé en paramètre",
+                  "timedOut": false,
+                  "duration": 0,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "assert.equal(Coffee.getType('Café en grains'), 1, 'Type inconnu');\nassert.equal(Coffee.getType('Café moulu'), 2, 'Type inconnu');\nassert.equal(Coffee.getType('Café dosette'), 3, 'Type inconnu');\nassert.equal(Coffee.getType('Café capsule'), 4, 'Type inconnu');\nassert.equal(Coffee.getType('Café qui n\\'existe pas'), 5, 'Type inconnu');",
+                  "err": {},
+                  "uuid": "b8c5bd22-5669-4f2d-9745-dadeffaae19c",
+                  "parentUUID": "874ce258-1a0b-4afc-8a0d-bbc5edea1918",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "b8c5bd22-5669-4f2d-9745-dadeffaae19c"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 0,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "6280ffdd-ebd0-444d-af90-364993b3e51a",
+              "title": "#grinding",
+              "fullFile": "C:\\Users\\thibaut.pontieux\\Documents\\ENI\\POC_mochaJS\\test\\coffeeTest.js",
+              "file": "\\test\\coffeeTest.js",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "doit retourner l'appareil Cafetière à piston associée à la mouture Coarse",
+                  "fullTitle": "Coffee #grinding doit retourner l'appareil Cafetière à piston associée à la mouture Coarse",
+                  "timedOut": false,
+                  "duration": 1,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "assert.strictEqual(Coffee.getGrinding(args), expected);",
+                  "err": {},
+                  "uuid": "6a444a9b-f19a-41b9-a405-908bf7718146",
+                  "parentUUID": "6280ffdd-ebd0-444d-af90-364993b3e51a",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "doit retourner l'appareil Cafetière infusion à froid associée à la mouture Coarse",
+                  "fullTitle": "Coffee #grinding doit retourner l'appareil Cafetière infusion à froid associée à la mouture Coarse",
+                  "timedOut": false,
+                  "duration": 0,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "assert.strictEqual(Coffee.getGrinding(args), expected);",
+                  "err": {},
+                  "uuid": "d16e9d5b-eba6-44e3-9191-99dc708e32ab",
+                  "parentUUID": "6280ffdd-ebd0-444d-af90-364993b3e51a",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "doit retourner l'appareil Cafetière à filtre associée à la mouture Medium coarse",
+                  "fullTitle": "Coffee #grinding doit retourner l'appareil Cafetière à filtre associée à la mouture Medium coarse",
+                  "timedOut": false,
+                  "duration": 0,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "assert.strictEqual(Coffee.getGrinding(args), expected);",
+                  "err": {},
+                  "uuid": "8126b036-0275-4cb2-9a96-3dd6b2424082",
+                  "parentUUID": "6280ffdd-ebd0-444d-af90-364993b3e51a",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "doit retourner l'appareil Cafetière électrique associée à la mouture Medium",
+                  "fullTitle": "Coffee #grinding doit retourner l'appareil Cafetière électrique associée à la mouture Medium",
+                  "timedOut": false,
+                  "duration": 0,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "assert.strictEqual(Coffee.getGrinding(args), expected);",
+                  "err": {},
+                  "uuid": "11117a23-d387-492d-a001-6ae926e65a38",
+                  "parentUUID": "6280ffdd-ebd0-444d-af90-364993b3e51a",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "doit retourner l'appareil Cafetière à dépression associée à la mouture Medium",
+                  "fullTitle": "Coffee #grinding doit retourner l'appareil Cafetière à dépression associée à la mouture Medium",
+                  "timedOut": false,
+                  "duration": 0,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "assert.strictEqual(Coffee.getGrinding(args), expected);",
+                  "err": {},
+                  "uuid": "53596fc0-ae75-4937-9b76-9269fb259638",
+                  "parentUUID": "6280ffdd-ebd0-444d-af90-364993b3e51a",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "doit retourner l'appareil Cafetière italienne associée à la mouture Fine",
+                  "fullTitle": "Coffee #grinding doit retourner l'appareil Cafetière italienne associée à la mouture Fine",
+                  "timedOut": false,
+                  "duration": 0,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "assert.strictEqual(Coffee.getGrinding(args), expected);",
+                  "err": {},
+                  "uuid": "258940bd-92a1-452d-93e4-9a4a6f52b335",
+                  "parentUUID": "6280ffdd-ebd0-444d-af90-364993b3e51a",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "doit retourner l'appareil Cafetière turque associée à la mouture Extra fine",
+                  "fullTitle": "Coffee #grinding doit retourner l'appareil Cafetière turque associée à la mouture Extra fine",
+                  "timedOut": false,
+                  "duration": 0,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "assert.strictEqual(Coffee.getGrinding(args), expected);",
+                  "err": {},
+                  "uuid": "b21d2a45-bba2-433d-8cc5-d601c3b0e7fd",
+                  "parentUUID": "6280ffdd-ebd0-444d-af90-364993b3e51a",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "6a444a9b-f19a-41b9-a405-908bf7718146",
+                "d16e9d5b-eba6-44e3-9191-99dc708e32ab",
+                "8126b036-0275-4cb2-9a96-3dd6b2424082",
+                "11117a23-d387-492d-a001-6ae926e65a38",
+                "53596fc0-ae75-4937-9b76-9269fb259638",
+                "258940bd-92a1-452d-93e4-9a4a6f52b335",
+                "b21d2a45-bba2-433d-8cc5-d601c3b0e7fd"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 1,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
